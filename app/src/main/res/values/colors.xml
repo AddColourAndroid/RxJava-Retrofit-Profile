@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorBorder">#e0e0e0</color>
+
+    <color name="color1">#00858E</color>
+    <color name="color2">#1B5E20</color>
+    <color name="color3">#4A148C</color>
+    <color name="color4">#C51162</color>
+    <color name="color5">#DD2C00</color>
+
+    <integer-array name="android_colors">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+
+    </integer-array>
 </resources>
