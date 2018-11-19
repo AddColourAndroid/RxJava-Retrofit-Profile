@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ROUND LETTER -->
+    <dimen name="round_letter_size">54dp</dimen>
+
+    <!-- TEXT VIEW -->
+    <dimen name="text_view_size">10sp</dimen>
+
+    <!-- MARGIN -->
+    <dimen name="margin_10">10dp</dimen>
+
+    <!-- PADDING -->
+    <dimen name="padding_16">16dp</dimen>
+
+</resources>
