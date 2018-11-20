@@ -2,7 +2,9 @@ package za.co.addcolour.rxjavaretrofitprofile.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Profile {
+import za.co.addcolour.rxjavaretrofitprofile.model.response.BaseResponse;
+
+public class Profile extends BaseResponse {
 
     @SerializedName("id")
     private int id;

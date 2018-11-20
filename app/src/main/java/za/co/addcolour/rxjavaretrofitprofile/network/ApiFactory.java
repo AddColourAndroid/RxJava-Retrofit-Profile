@@ -17,6 +17,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import za.co.addcolour.rxjavaretrofitprofile.utils.Constant;
 
+import static za.co.addcolour.rxjavaretrofitprofile.utils.Constant.API_KEY;
+
 public class ApiFactory {
 
     private static Retrofit retrofit = null;
@@ -55,7 +57,7 @@ public class ApiFactory {
             public Response intercept(@NonNull Chain chain) throws IOException {
                 Request original = chain.request();
                 Request.Builder requestBuilder = original.newBuilder()
-                        .addHeader("Content-Type", "application/json");
+                        .addHeader("X-API-Key", API_KEY);
 
                 Request request = requestBuilder.build();
                 return chain.proceed(request);

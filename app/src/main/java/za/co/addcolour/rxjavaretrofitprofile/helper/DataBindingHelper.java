@@ -27,7 +27,7 @@ public class DataBindingHelper {
         int[] mArrayColor = letterView.getContext().getResources().getIntArray(R.array.android_colors);
 
         letterView.setBackgroundColor(mArrayColor[random.nextInt(mArrayColor.length)]);
-        letterView.setTitleText(username);
+        letterView.setTitleText(String.valueOf(username.charAt(0)));
         letterView.setTitleSize(45);
     }
 }

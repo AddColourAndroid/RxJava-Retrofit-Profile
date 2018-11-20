@@ -1,7 +1,7 @@
-package za.co.addcolour.rxjavaretrofitprofile.model;
+package za.co.addcolour.rxjavaretrofitprofile.model.response;
 
 public class BaseResponse {
-    private String error;
+    public String error;
 
     public String getError() {
         return error;
