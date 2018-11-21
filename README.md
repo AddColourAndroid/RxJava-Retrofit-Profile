@@ -1,5 +1,4 @@
 # RxJava, Retrofit, and viewModel (Java)
-<p>This repo have three branches. </p>
 <strong>Resources</strong>
   - <p><strong><a href="http://square.github.io/retrofit/">Retrofit</a></strong></p>
   - <p><strong><a href="https://github.com/bumptech/glide">Glide</a></strong></p>
