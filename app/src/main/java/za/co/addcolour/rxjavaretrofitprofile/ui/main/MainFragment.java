@@ -19,8 +19,6 @@ import java.util.List;
 import za.co.addcolour.rxjavaretrofitprofile.R;
 import za.co.addcolour.rxjavaretrofitprofile.databinding.MainFragmentBinding;
 import za.co.addcolour.rxjavaretrofitprofile.model.Profile;
-import za.co.addcolour.rxjavaretrofitprofile.network.ApiFactory;
-import za.co.addcolour.rxjavaretrofitprofile.network.ApiInterface;
 import za.co.addcolour.rxjavaretrofitprofile.ui.adapter.ProfileAdapter;
 
 public class MainFragment extends Fragment {
@@ -37,8 +35,6 @@ public class MainFragment extends Fragment {
 
     private MainFragmentBinding mBinding;
 
-    private ApiInterface apiInterface;
-
     private ProfileAdapter mAdapter;
     private List<Profile> mProfileList = new ArrayList<>();
 
@@ -48,8 +44,6 @@ public class MainFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         mBinding = DataBindingUtil.inflate(inflater, R.layout.main_fragment, container, false);
-
-        apiInterface = ApiFactory.getClient(getActivity()).create(ApiInterface.class);
 
         mAdapter = new ProfileAdapter();
         mAdapter.setProfileList(mProfileList);
@@ -67,7 +61,7 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         MainViewModel viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
-        viewModel.getProfile(apiInterface).observe(this, profileList -> {
+        viewModel.getProfile().observe(this, profileList -> {
             if (profileList != null) {
                 mProfileList.clear();
                 mProfileList.addAll(profileList);
