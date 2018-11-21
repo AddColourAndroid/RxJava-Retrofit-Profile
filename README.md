@@ -1,4 +1,4 @@
-# RxJava / Retrofit Android (Java)
+# RxJava / Retrofit / viewModel (Java)
 <strong>Resources</strong>
   - <p><strong><a href="http://square.github.io/retrofit/">Retrofit</a></strong></p>
   - <p><strong><a href="https://github.com/bumptech/glide">Glide</a></strong></p>
